@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital&display=swap');
+@import url(./colors.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'open sans',cursive;
+}
+
+body{
+    background-color: var(--light_pale_green);
+    min-height: calc(100vh - 5rem);
+    padding-bottom: 5rem !important;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    background-color: var(--green);
+    justify-content: space-between;
+}
+
+nav .title{
+    display: inline-block;
+    color: #000;
+    margin-bottom: -1rem;
+    left:-2rem;
+    position: relative;
+    top:-1.2rem
+}
+
+nav img{
+    height: 2rem;
+    padding: 0.75rem;
+    padding-left: 5px;
+}
+
+nav form{
+    display: inline;
+    float: right;
+    padding: .8rem .8rem;
+}
+
+nav .search{
+    line-height: 25px;
+    padding: 0.2rem 0.75rem;
+    font-size: large;
+}
+
+nav .search:first-child:focus{
+    outline: none!important;
+    border: 2px solid orange;
+}
+
+nav .search:first-child{
+    border-radius: 10px;
+    border: 2px solid;
+    outline: none;
+}
+
+nav input[type=submit]{
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid ;
+    background-color: var(--pale_green);
+}
+
+.heading{
+        margin: 1.75rem;
+        text-align: center;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--pale_green);
+    position: absolute;
+    bottom: 0px;
+}
+
+footer h1,a{
+    padding-inline: 1rem;
+}
+
+footer a,nav a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+    nav{
+        display: inline-block;
+        width: 100%;
+    }
+    nav form{
+        float: none;
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 0.75rem;
+    }
+}

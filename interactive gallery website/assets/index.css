@@ -1,0 +1,23 @@
+@import url(./colors.css);
+
+.img_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1rem;
+    gap: .7rem;
+}
+
+.img_container .item{
+    padding: .4rem;
+}
+
+.img_container .item:hover{
+    position: relative;
+    top:-5px;
+    left:-5px;
+    /* transform: translate(-50%,-50%); */
+    box-shadow: 10px 10px 0px var(--pale_green);
+    transition:  linear .5s;
+}
